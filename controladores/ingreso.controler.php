@@ -42,6 +42,13 @@ class Ingreso_Controller{
 		if ($ok_user) {
 			$tp1 = new TemplatePower("templates/registro_exito.html");
        		$tp1->prepare();
+       		  $tp1->newBlock("ok_registro");
+            return $tp1->getOutputContent();
+		}
+		else{
+			$tp1 = new TemplatePower("templates/registro_exito.html");
+       		$tp1->prepare();
+       		  $tp1->newBlock("nok_registro");
             return $tp1->getOutputContent();
 		}
 
