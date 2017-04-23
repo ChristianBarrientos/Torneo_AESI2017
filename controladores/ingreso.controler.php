@@ -9,5 +9,11 @@ class Ingreso_Controller{
 
 	}
 
+	function inscripcion (){
+        
+		echo "hola";
+
+	}
+
 }
 ?>

@@ -125,10 +125,18 @@ header #next_section img{
 	
 }
 #slider section.slide{
+	
 	position: absolute;
 	width: 100%;
 	top: 0px;
 	left: 0px
+}
+
+#slider {
+	
+	position: relative;
+	top: -70px;
+	
 }
 #slider #inicio{
 	
@@ -178,6 +186,104 @@ header #next_section img{
 }
 
 
+#inscrip_form{
+	position: absolute;
+	height: 90vh; /*Altura del dispositivo*/
+	background: white;
+	width: 250px;
+	top: 35px;
+	right: 0px;
+	border-top: 1px solid black;
+	box-shadow: 0px 0px 3px #6E00D4;
+	z-index: 999;
+	display: none;
+
+
+
+}
+
+
+#inscrip_form form label{
+	font-size: 1.0em;
+	font-weight: 900;
+	
+	margin-left: 15px;
+}
+#inscrip_form #close_form {
+	position: absolute;
+	
+	width: 30px;
+	height: 30px;
+	left:85%;
+	top: 190px;
+	z-index: 999;
+
+}
+#inscrip_form #close_form:before{
+	content: 'X';
+	position: relative;
+	font-size: 1.5em;
+
+	font-weight: 900;
+}
+
+#inscrip_form #close_form:hover{
+	cursor: pointer;
+	
+}
+
+#inscrip_form figure{
+	height: 180px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#inscrip_form figure img{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#inscrip_form p{
+	margin: 20px;
+	width: 80%;
+	margin-left: 5%;
+}
+
+#inscrip_form input{
+	display: block;
+	margin: 20px;
+	border:none;
+	border-bottom: 2px solid gray;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 3px;
+	margin-bottom: 50px;
+	font-weight: bold;
+
+}
+
+#inscrip_form #button{
+	background: #8D38B1;
+	border: none;
+	color: white;
+	padding: 8px 0px;
+
+
+}
+
+#contac_button{
+	width: 110px;
+	height: 60px;
+	background: red;
+	position: absolute;
+	left: 35%;
+	top: 85%;
+
+}
 footer{
 	width: 100%;
 	background: black;
@@ -313,7 +419,19 @@ footer p{
 }
 
 @media screen and (min-width: 600px){
+
+
+
+
+
+
+
+
+	#contac_button{
 	
+		
+
+	}
 }
 
 @media screen and (min-width: 767px){
@@ -467,6 +585,16 @@ header nav #card_menu ul li a{
 	font-weight: 900;
 	z-index: 1000;
 	color: white;
+}
+
+
+#contac_button{
+	width: 110px;
+	height: 60px;
+	position: absolute;
+	left: 45%;
+	top: 85%;
+
 }
 
 }
