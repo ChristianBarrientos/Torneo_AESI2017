@@ -40,7 +40,7 @@ class Ingreso_Controller{
 
 		$ok_user = usuario::insert_usuario($nombre,$dni,$correo,$pass);
 		if ($ok_user) {
-			$tp1 = new TemplatePower("templates/registro_exito	.html");
+			$tp1 = new TemplatePower("templates/registro_exito.html");
        		$tp1->prepare();
             return $tp1->getOutputContent();
 		}

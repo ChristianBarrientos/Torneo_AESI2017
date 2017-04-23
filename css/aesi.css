@@ -395,13 +395,18 @@ header #next_section img{
 }
 
 #exito_msj{
-	border:1px solid red;
+	color: white;
 	position: absolute;
-	top: 300%;
-	left: 25%;
-	background: #9C64B3;
+	top: 450%;
+	left: 5%;
+	
+	width: 90%
 
 }
+
+#exito_msj > h2{
+	font-size: 4em;
+	}
 footer{
 	width: 100%;
 	background: black;
