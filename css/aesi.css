@@ -232,15 +232,13 @@ header #next_section img{
 	padding-bottom: 20px;
 }
 
-#slider #nosotros #foto_nosotros{
-	position: relative;
-	border:1px solid red;
-}
+
 
 #slider #nosotros{ 
 	
 	position: relative;
 	display: block;
+	
 }
 
 #slider #nosotros span{
@@ -252,6 +250,7 @@ header #next_section img{
 	
 	position: relative;
 	display: block;
+
 }
 
 #slider #nosotros .texto_cuerpo_2 p{ 
@@ -259,11 +258,20 @@ header #next_section img{
 	font-weight: 600;
 	text-align : justify;
 	margin: 12px;
+
+	
+}
+
+#slider #nosotros .texto_cuerpo_2 p a{ 
+	text-decoration: none;
+	color: black;
 }
 
 
-#slider #nosotros figure img{
-	border:1px solid red;
+
+#slider figure img{
+	
+	width: 100%;
 }
 
 
