@@ -2,7 +2,6 @@ CREATE TABLE usuarios (
      id_usuario INTEGER AUTO_INCREMENT NOT NULL,
      dni_usuario INTEGER ,
      nombre VARCHAR(500) NOT NULL,
-     apellido VARCHAR(500) NOT NULL,
      correo VARCHAR(100) NOT NULL,
      pass VARCHAR (50) NOT NULL,
      PRIMARY KEY (id_usuario)
@@ -11,7 +10,7 @@ CREATE TABLE usuarios (
 
 CREATE TABLE problema (
     id_problema INTEGER AUTO_INCREMENT NOT NULL,
-    nivel_problema INTEGER AUTO_INCREMENT NOT NULL,
+    nivel_problema INTEGER NOT NULL,
     intro_problema VARCHAR (1000),
     cuerpo_problema varchar(5000),
     solucion VARCHAR (100),
@@ -29,7 +28,7 @@ CREATE TABLE archivo (
 CREATE TABLE respuesta (
      id_respuesta INTEGER AUTO_INCREMENT NOT NULL,
      id_archivo INTEGER NOT NULL,
-     KEY (id_resumen),
+     KEY (id_respuesta),
      FOREIGN KEY (id_archivo) REFERENCES archivo(id_archivo) ON DELETE NO ACTION ON UPDATE CASCADE
      ) ENGINE=InnoDB;
 

@@ -43,3 +43,9 @@ function displayMenu(){
 
 }
 
+function displayForm(estado){
+	
+	var form = document.getElementById("inscrip_form");
+	form.style.display = estado;
+}
+

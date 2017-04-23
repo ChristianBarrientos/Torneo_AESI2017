@@ -1,0 +1,50 @@
+
+
+	<div id="slider">
+		<section class="slide" id="inicio" style="display:block">
+				<div class="mainfondotrasfoto">
+					
+				</div>
+				<div class="mainlogo">
+					<h2><strong>Torneo de Programacion</strong></h2>	
+					<figure><img src="img/aesi.jpg" alt=""></figure>
+					
+				</div>
+				<div id='contador'></div>
+		</section>
+		<section class="slide" id="contacto" style="display:none">
+			<h1>Condiciones</h1>
+		</section>
+		<section class="slide" id="cursos" style="display:none">
+			<h1>Nosotros</h1>
+		</section>
+		
+	</div>
+
+	<div id="inscrip_form">
+		<form enctype="multipart/form-data" action="index.php?action=Ingreso::inscripcion" 	method="post" id="form1"> 
+			<figure id="logo_mensaje">
+				<img src="img/enviar.png" alt="">
+			</figure>
+			<div id="close_form" onClick="displayForm('none')">
+				
+			</div>
+			<p>Ingresa tus datos.</p>
+			<label for="nombre">Apellido y Nombre</label>
+			<input required type="text" name="nombre" placeholder="Tu Nombre" onmouseover="this.placeholder ='Sii Siiiiiii Completamee!!! :D'" onmouseout="this.placeholder ='Hoo noo... vuelve :,('">
+			<label for="dni">DNI</label>
+			<input required type="number" name="dni" placeholder="Tu DNI" onmouseover="this.placeholder ='Sera tu pk en la db :O'" onmouseout="this.placeholder ='solo eso..encerio.:P'">
+			
+			<label for="correo">Email</label>
+			<input required type="email" name="correo" placeholder="Tu Correo" onmouseover="this.placeholder ='Ya casi terminas el form!:,D'" onmouseout="this.placeholder ='por que te vas? :S'">
+
+			<label for="correo">Contraseña</label>
+			<input required type="password" name="pass" placeholder="Contraseña para tu cuenta" onmouseover="this.placeholder ='Esto es lo ultimo ;)'" onmouseout="this.placeholder ='No entratemos a tu face u.u'">
+			<input type="submit" name="submit" id="button" value="Inscribeme!">
+	
+		</form>
+	</div>
+	<div id="contac_button" onClick="displayForm('block')">
+		<h3>Inscribirme!</h3>
+	</div>
+	

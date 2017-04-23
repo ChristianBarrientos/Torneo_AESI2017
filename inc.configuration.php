@@ -1,6 +1,6 @@
 <?php
 /*Seteamos el arreglo de conexión con la base de datos*/
-$config["db"]="jornada";
+$config["db"]="aesi";
 $config["dbuser"]="root";
 $config["dbpass"]="";
 $config["dbhost"]="localhost";
