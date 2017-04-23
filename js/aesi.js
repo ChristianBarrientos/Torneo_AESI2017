@@ -1,4 +1,5 @@
 alertSize();
+
 function alertSize() { 
   var myWidth = 0, myHeight = 0; 
   if( typeof( window.innerWidth ) == 'number' ) { 
