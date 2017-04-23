@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="Franja Morada Catamarca, fmtecno, franja morada">
+	<meta name="description" content="Franja Morada Tecnologia Catamarca, Franja Morada, Radicales Catamarca">
+	<meta name="owner" content="Franja Morada">
+
+	<meta name="author" content="abueloinformatico.xyz">
+	<meta name="robots" content="index, follow">
+
+    <meta http-equiv="Expires" content="0" /> 
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="window-target" content="_top">
+	<title>AESI TECNO</title>
+	<link rel="stylesheet" href="css/aesi.css?v=1.5" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	
+	<link rel="stylesheet" href="css/icoicoico/style.css" type="text/css">
+	<script type="text/javascript" src="js/aesi.js?v=1.0"</script> 
+	<script type="text/javascript" src="js/modernizr.js"</script>
+	<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-timepicker-addon.js"></script>
+
+
+   <script type="text/javascript">
+        
+        function countdown(id){
+        	////////////////FECHA
+            var fecha=new Date('2017','3','28','10','0','0')
+         
+            var hoy=new Date()
+            var dias=0
+            var horas=0
+            var minutos=0
+            var segundos=0
+
+            if (fecha>hoy){
+                    var diferencia=(fecha.getTime()-hoy.getTime())/1000
+                    dias=Math.floor(diferencia/86400)
+                    diferencia=diferencia-(86400*dias)
+                    horas=Math.floor(diferencia/3600)
+                    diferencia=diferencia-(3600*horas)
+                    minutos=Math.floor(diferencia/60)
+                    diferencia=diferencia-(60*minutos)
+                    segundos=Math.floor(diferencia)
+
+                    document.getElementById(id).innerHTML=   dias + ' D&iacute;as- ' + horas + ' Horas- ' + minutos + ' Minutos- ' + segundos + ' Segundos'
+
+                    if (dias>0 || horas>0 || minutos>0 || segundos>0){
+                            setTimeout("countdown(\"" + id + "\")",1000)
+                    }
+            }
+            else{
+                    document.getElementById('restante').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'
+            }
+        }
+        </script>
+</head>
+<body onload="countdown('contador')">
+
+	<header>
+		<h1>
+			<a href="index.php?action=Ingreso_Controller::login">
+				<figure>
+					<img src="img/aesi.jpg" alt="">
+				</figure>
+			</a>
+			<a id="fm_nav" href="index.php?action=Ingreso_Controller::login">AESI</a>
+		</h1>
+		
+		<nav id="ioMenu">
+			<figure id="showMenu" class="ioMenuMovil" onClick="displayMenu()">
+				<h3>MENU</h3>
+			</figure>	
+			<div id="card_menu">
+				<figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()">
+					<h3>CERRAR</h3>
+				</figure>
+
+				<figure id="logo_menu">
+					<img src="img/aesi.jpg" alt="">
+				</figure>
+
+				<ul>
+					<li><a onClick="navSection('inicio')"href="#">Inicio</a></li>
+					<li><a onClick="navSection('contacto')"href="#">Condiciones</a></li>
+					<li><a onClick="navSection('cursos')"href="#">Nosotros</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<div id="slider">
+		<section class="slide" id="inicio" style="display:block">
+				<div class="mainfondotrasfoto">
+					
+				</div>
+				<div class="mainlogo">
+					<h2><strong>Torneo de Programacion</strong></h2>	
+					<figure><img src="img/aesi.jpg" alt=""></figure>
+					
+				</div>
+				<div id='contador'></div>
+		</section>
+		<section class="slide" id="contacto" style="display:none">
+			<h1>Condiciones</h1>
+		</section>
+		<section class="slide" id="cursos" style="display:none">
+			<h1>Nosotros</h1>
+		</section>
+		
+	</div>
+
+	<footer>
+
+		<div class="rrss">
+			<a target="_blank" href="https://es-la.facebook.com/aesi.tecno"><strong>AESI-TECNO</strong></a>
+			<p>Agrupacion de Estudiantes de Sistemas e Informatica.</p>
+			<p>Facultad de Tecnologia- UNCa</p>
+		</div>
+		
+	</footer>
+	
+</body>
+</html>
