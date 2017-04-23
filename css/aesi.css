@@ -172,7 +172,7 @@ header #next_section img{
 }
 #slider .slide span {
 	position: relative;
-	border:1px solid red;
+	
 	font-size: 2em;
 	font-weight: 900;
 	left: -45%;
@@ -231,10 +231,41 @@ header #next_section img{
 	
 	padding-bottom: 20px;
 }
-#slider #cursos{
-	height: 500px;
-	
+
+#slider #nosotros #foto_nosotros{
+	position: relative;
+	border:1px solid red;
 }
+
+#slider #nosotros{ 
+	
+	position: relative;
+	display: block;
+}
+
+#slider #nosotros span{
+	position: relative;
+	
+	left: 0px;
+} 
+#slider #nosotros .texto_cuerpo_2{ 
+	
+	position: relative;
+	display: block;
+}
+
+#slider #nosotros .texto_cuerpo_2 p{ 
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align : justify;
+	margin: 12px;
+}
+
+
+#slider #nosotros figure img{
+	border:1px solid red;
+}
+
 
 
 #inscrip_form{

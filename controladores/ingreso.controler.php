@@ -21,6 +21,16 @@ class Ingreso_Controller{
 
 	}
 
+	function nosotros (){
+        
+		$tpl = new TemplatePower("templates/nosotros.html");
+		$tpl->prepare();
+		//$tpl->newBlock("menu_var");
+		//$tpl->newBlock("bienvenida");
+		return $tpl->getOutputContent();
+
+	}
+
 	function inscripcion (){
         
 		$nombre = $_POST['nombre'];
