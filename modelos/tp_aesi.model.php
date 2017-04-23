@@ -5,7 +5,7 @@ class usuario{
 	public static function insert_usuario($nombre,$dni, $correo,$pass)
     	{
     		
-    		if (usuario::consultar_correo($correo)) {
+    		if (usuario::consultar_correo($correo) && usuario::consultar_dni($dni)) {
     			global $baseDatos;
 		        $passmd5 = md5($pass);
 		        
@@ -25,6 +25,18 @@ class usuario{
     public static function consultar_correo ($correo){
     	 global $baseDatos;
 	        $results = $baseDatos->query("SELECT COUNT(*) AS cant FROM `usuarios` WHERE `correo` = '$correo'");
+	        $res = $results->fetch_assoc();
+	       
+	        if ($res["cant"] == 0) {
+	            return true;
+	        } else {
+	            return false;
+	        }
+    }
+
+    public static function consultar_dni ($dni){
+    	 	global $baseDatos;
+	        $results = $baseDatos->query("SELECT COUNT(*) AS cant FROM `usuarios` WHERE `dni_usuario` = '$dni'");
 	        $res = $results->fetch_assoc();
 	       
 	        if ($res["cant"] == 0) {
