@@ -549,6 +549,11 @@ footer p{
 
 @media screen and (min-width: 767px){
 
+header nav #card_menu{
+	display: block !important;
+	}
+
+
 	body{
 		top: 0px;
 	}
@@ -732,6 +737,7 @@ header nav #card_menu ul li a{
 
 
 }
+
 
 }
 

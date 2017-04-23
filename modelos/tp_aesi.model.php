@@ -2,7 +2,7 @@
 class usuario{
 
 
-	public function insert_usuario($nombre,$dni, $correo,$pass)
+	public static function insert_usuario($nombre,$dni, $correo,$pass)
     	{
     		
     		if (usuario::consultar_correo($correo)) {
@@ -22,7 +22,7 @@ class usuario{
 	        
     	}
 
-    public function consultar_correo ($correo){
+    public static function consultar_correo ($correo){
     	 global $baseDatos;
 	        $results = $baseDatos->query("SELECT COUNT(*) AS cant FROM `usuarios` WHERE `correo` = '$correo'");
 	        $res = $results->fetch_assoc();
