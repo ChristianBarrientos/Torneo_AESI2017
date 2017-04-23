@@ -11,6 +11,16 @@ class Ingreso_Controller{
 
 	}
 
+	function condiciones (){
+        
+		$tpl = new TemplatePower("templates/condiciones.html");
+		$tpl->prepare();
+		//$tpl->newBlock("menu_var");
+		//$tpl->newBlock("bienvenida");
+		return $tpl->getOutputContent();
+
+	}
+
 	function inscripcion (){
         
 		$nombre = $_POST['nombre'];

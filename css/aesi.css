@@ -121,29 +121,76 @@ header #next_section img{
 	
 	width: 100%;
 	position: relative;
-	height: 600px;
+	height: 800px;
+	
 	
 }
 #slider section.slide{
 	
 	position: absolute;
 	width: 100%;
-	top: 0px;
-	left: 0px
+	top: 100px;
+	left: 0px;
+	
+}
+
+#slider section.slide #condiciones{
+	
+	position: absolute;
+
 }
 
 #slider {
 	
 	position: relative;
-	top: -70px;
+	top: 0px;
+	
+	text-align: center;
+	
+}
+
+#slider h1{
+	
+	position: relative;
+	top: 0px;
+	display: inline-block;
+	
+	padding: 0px;
+	margin-left: 0px;
+	font-size: 4em;
+	
+	
+}
+
+#slider .texto_cuerpo {
+	
+	width: 80%;
+	position: relative;
+	
+	left: 10%;
+	
+}
+#slider .slide span {
+	position: relative;
+	border:1px solid red;
+	font-size: 2em;
+	font-weight: 900;
+	left: -30%;
+	margin-top: 10%;
+}
+
+#slider .texto_cuerpo > p{
+	
+	text-align : justify;
 	
 }
 #slider #inicio{
 	
 	background: #233D58;
-	/*position: relative;*/
+	position: relative;
 	text-align: center;
 	padding-bottom: 50px;
+	top: 0px;
 	
 }
 
@@ -176,9 +223,13 @@ header #next_section img{
 	margin: 0px;
 }
 
-#slider #contacto{
-	height: 500px;
+#slider #condiciones{
+	height: auto;
+	width: auto;
 	
+	left: 10%;
+	
+	padding-bottom: 20px;
 }
 #slider #cursos{
 	height: 500px;
@@ -279,7 +330,7 @@ header #next_section img{
 	
 	
 	height: 85px;
-	border:1px solid #6B06C9;
+	border:1px solid #F5FE00;
 	border-left-style: none;
 	border-right-style: none;
 	position: absolute;
@@ -612,13 +663,14 @@ header nav #card_menu ul li a{
 	position: absolute;
 	left: 45%;
 	top: 85%;
-	background: #7D17AC;
+	
 
 }
 #contac_button h3{
 	text-align: center;
 	position: relative;
 	top: -20px;
+	color: white;
 }
 
 #inscrip_form{
