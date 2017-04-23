@@ -164,10 +164,10 @@ header #next_section img{
 
 #slider .texto_cuerpo {
 	
-	width: 80%;
+	width: 99%;
 	position: relative;
-	
-	left: 10%;
+	font-size: 1.2em;
+	left: -5%;
 	
 }
 #slider .slide span {
@@ -175,7 +175,7 @@ header #next_section img{
 	border:1px solid red;
 	font-size: 2em;
 	font-weight: 900;
-	left: -30%;
+	left: -45%;
 	margin-top: 10%;
 }
 
