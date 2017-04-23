@@ -1,4 +1,5 @@
 alertSize();
+
 function alertSize() { 
   var myWidth = 0, myHeight = 0; 
   if( typeof( window.innerWidth ) == 'number' ) { 
@@ -41,5 +42,11 @@ function displayMenu(){
 		card_menu.style.display = "none";
 	}
 
+}
+
+function displayForm(estado){
+	
+	var form = document.getElementById("inscrip_form");
+	form.style.display = estado;
 }
 

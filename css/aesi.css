@@ -121,29 +121,76 @@ header #next_section img{
 	
 	width: 100%;
 	position: relative;
-	height: 600px;
+	height: 800px;
+	
 	
 }
 #slider section.slide{
 	
 	position: absolute;
 	width: 100%;
-	top: 0px;
-	left: 0px
+	top: 100px;
+	left: 0px;
+	
+}
+
+#slider section.slide #condiciones{
+	
+	position: absolute;
+
 }
 
 #slider {
 	
 	position: relative;
-	top: -70px;
+	top: 0px;
+	
+	text-align: center;
+	
+}
+
+#slider h1{
+	
+	position: relative;
+	top: 0px;
+	display: inline-block;
+	
+	padding: 0px;
+	margin-left: 0px;
+	font-size: 4em;
+	
+	
+}
+
+#slider .texto_cuerpo {
+	
+	width: 99%;
+	position: relative;
+	font-size: 1.2em;
+	left: -5%;
+	
+}
+#slider .slide span {
+	position: relative;
+	
+	font-size: 2em;
+	font-weight: 900;
+	left: -45%;
+	margin-top: 10%;
+}
+
+#slider .texto_cuerpo > p{
+	
+	text-align : justify;
 	
 }
 #slider #inicio{
 	
 	background: #233D58;
-	/*position: relative;*/
+	position: relative;
 	text-align: center;
 	padding-bottom: 50px;
+	top: 0px;
 	
 }
 
@@ -176,19 +223,62 @@ header #next_section img{
 	margin: 0px;
 }
 
-#slider #contacto{
-	height: 500px;
+#slider #condiciones{
+	height: auto;
+	width: auto;
+	
+	left: 10%;
+	
+	padding-bottom: 20px;
+}
+
+
+
+#slider #nosotros{ 
+	
+	position: relative;
+	display: block;
 	
 }
-#slider #cursos{
-	height: 500px;
+
+#slider #nosotros span{
+	position: relative;
+	
+	left: 0px;
+} 
+#slider #nosotros .texto_cuerpo_2{ 
+	
+	position: relative;
+	display: block;
+
+}
+
+#slider #nosotros .texto_cuerpo_2 p{ 
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align : justify;
+	margin: 12px;
+
 	
 }
+
+#slider #nosotros .texto_cuerpo_2 p a{ 
+	text-decoration: none;
+	color: black;
+}
+
+
+
+#slider figure img{
+	
+	width: 100%;
+}
+
 
 
 #inscrip_form{
 	position: absolute;
-	height: 90vh; /*Altura del dispositivo*/
+	height: 115%; /*Altura del dispositivo vh*/
 	background: white;
 	width: 250px;
 	top: 35px;
@@ -276,14 +366,47 @@ header #next_section img{
 }
 
 #contac_button{
-	width: 110px;
-	height: 60px;
-	background: red;
+	
+	
+	height: 85px;
+	border:1px solid #F5FE00;
+	border-left-style: none;
+	border-right-style: none;
 	position: absolute;
-	left: 35%;
-	top: 85%;
+	left: 20%;
+	top: 80%;
+	
+	width: auto;
+	transition-duration: 0.7s;
+}
+
+
+#contac_button:hover{
+	cursor: pointer;
+	text-shadow:  0px 0px 20px LightSeaGreen;
+	
+	font-size: 110%;
+	}
+#contac_button h3{
+	font-weight: 900;
+	font-size: 2em;
+	color: black;
+	text-align: center;
+}
+
+#exito_msj{
+	color: white;
+	position: absolute;
+	top: 450%;
+	left: 5%;
+
+	width: 90%
 
 }
+
+#exito_msj > h2{
+	font-size: 4em;
+	}
 footer{
 	width: 100%;
 	background: black;
@@ -301,7 +424,7 @@ footer:hover{
 	bottom: 0px;
 }
 
-footer:after{
+/*footer:after{
 	font-family: 'icomoon';
 	content: "\ea3a";
 	position: absolute;
@@ -316,15 +439,15 @@ footer:after{
 	background: black;
 	color: white;
 	/*transform: rotate(180deg);*/
-	font-size: 4em;
+/*	font-size: 4em;
 	transition-duration: 0.4s;
 	}
 
-footer:hover:after{
+/*footer:hover:after{
   transform: rotate(180deg);
   background: white;
   color:black;
-}
+}*/
 
 footer .rrss{
 	margin-top: 70px;
@@ -418,20 +541,10 @@ footer p{
 	}
 }
 
+
 @media screen and (min-width: 600px){
 
 
-
-
-
-
-
-
-	#contac_button{
-	
-		
-
-	}
 }
 
 @media screen and (min-width: 767px){
@@ -589,11 +702,34 @@ header nav #card_menu ul li a{
 
 
 #contac_button{
-	width: 110px;
+	width: auto;
 	height: 60px;
 	position: absolute;
 	left: 45%;
 	top: 85%;
+	
+
+}
+#contac_button h3{
+	text-align: center;
+	position: relative;
+	top: -20px;
+	color: white;
+}
+
+#inscrip_form{
+	position: absolute;
+	height: 115%; /*Altura del dispositivo vh*/
+	background: white;
+	width: 250px;
+	top: 35px;
+	right: 0px;
+	border-top: 1px solid black;
+	box-shadow: 0px 0px 3px #6E00D4;
+	z-index: 999;
+	display: none;
+
+
 
 }
 

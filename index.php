@@ -25,12 +25,12 @@
 include("include_config.php");
 
 global $config;
-/*if ($config["dbEngine"]=="MYSQL"){
+if ($config["dbEngine"]=="MYSQL"){
 	$baseDatos = new mysqli($config["dbhost"],$config["dbuser"],$config["dbpass"],$config["db"]);
 	
 	
 }
-*/
+
 
 
 //===========================================================================================================
@@ -81,6 +81,8 @@ global $config;
 	$tpl->gotoBlock("_ROOT");
     $tpl->assign("contenido",$html);
     $tpl->printToScreen();
+
+	
     	
     	
    

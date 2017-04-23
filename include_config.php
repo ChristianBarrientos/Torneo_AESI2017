@@ -5,7 +5,7 @@ include('inc.configuration.php');
 include('controladores/ingreso.controler.php');
 
 /*Modelos*/
-//include('modelos/usuario.model.php');
+include('modelos/tp_aesi.model.php');
 
 /*Templates-Vistas*/
 include('php_recurso/class.TemplatePower.inc.php');

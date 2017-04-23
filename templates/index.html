@@ -14,11 +14,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="window-target" content="_top">
 	<title>AESI TECNO</title>
-	<link rel="stylesheet" href="css/aesi.css?v=2.1" type="text/css">
+	<link rel="stylesheet" href="css/aesi.css?v=3.0" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	
 	<link rel="stylesheet" href="css/icoicoico/style.css" type="text/css">
-	<script type="text/javascript" src="js/aesi.js?v=1.0"</script> 
+	<script type="text/javascript" src="js/aesi.js?v=1.1"</script> 
 	<script type="text/javascript" src="js/modernizr.js"</script>
 	<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
@@ -56,10 +56,13 @@
             else{
                     document.getElementById('restante').innerHTML='Quedan ' + dias + ' D&iacute;as, ' + horas + ' Horas, ' + minutos + ' Minutos, ' + segundos + ' Segundos'
             }
+
+     
         }
         </script>
 </head>
 <body onload="countdown('contador')">
+
 
 	<header>
 		<h1>
@@ -68,14 +71,14 @@
 					<img src="img/aesi.jpg" alt="">
 				</figure>
 			</a>
-			<a id="fm_nav" href="index.php?action=Ingreso_Controller::login">AESI</a>
+			<a id="fm_nav" href="index.php?action=Ingreso::login">AESI</a>
 		</h1>
 		
 		<nav id="ioMenu">
 			<figure id="showMenu" class="ioMenuMovil" onClick="displayMenu()">
 				<h3>MENU</h3>
 			</figure>	
-			<div id="card_menu">
+			<div id="card_menu" style="display:none">
 				<figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()">
 					<h3>CERRAR</h3>
 				</figure>
@@ -85,59 +88,21 @@
 				</figure>
 
 				<ul>
-					<li><a onClick="navSection('inicio')"href="#">Inicio</a></li>
-					<li><a onClick="navSection('contacto')"href="#">Condiciones</a></li>
-					<li><a onClick="navSection('cursos')"href="#">Nosotros</a></li>
+					<li><a href="index.php?action=Ingreso::login">Inicio</a></li>
+					<li><a href="index.php?action=Ingreso::condiciones">Condiciones</a></li>
+					<li><a href="index.php?action=Ingreso::nosotros">Nosotros</a></li>
 				</ul>
 			</div>
 		</nav>
 
 	</header>
 
-	<div id="slider">
-		<section class="slide" id="inicio" style="display:block">
-				<div class="mainfondotrasfoto">
-					
-				</div>
-				<div class="mainlogo">
-					<h2><strong>Torneo de Programacion</strong></h2>	
-					<figure><img src="img/aesi.jpg" alt=""></figure>
-					
-				</div>
-				<div id='contador'></div>
-		</section>
-		<section class="slide" id="contacto" style="display:none">
-			<h1>Condiciones</h1>
-		</section>
-		<section class="slide" id="cursos" style="display:none">
-			<h1>Nosotros</h1>
-		</section>
-		
-	</div>
 
-	<div id="inscrip_form">
-		<form enctype="multipart/form-data" action="index.php?action=Ingreso::inscripcion" 	method="post" id="form1"> 
-			<figure id="logo_mensaje">
-				<img src="img/enviar.png" alt="">
-			</figure>
-			<div id="close_form">
-				
-			</div>
-			<p>Ingresa tus datos.</p>
-			<label for="nombre">Apellido y Nombre</label>
-			<input type="text" name="nombre" placeholder="Tu Nombre" onmouseover="this.placeholder ='Sii Siiiiiii Completamee!!! :D'" onmouseout="this.placeholder ='Hoo noo... vuelve :,('">
-			<label for="dni">DNI</label>
-			<input type="number" name="dni" placeholder="Tu DNI" onmouseover="this.placeholder ='Sera tu pk en la db :O'" onmouseout="this.placeholder ='solo eso..encerio.:P'">
-			
-			<label for="correo">Email</label>
-			<input type="email" name="correo" placeholder="Tu Correo" onmouseover="this.placeholder ='Ya casi terminas el form!:,D'" onmouseout="this.placeholder ='por que te vas? :S'">
-			<input type="submit" name="submit" id="button" value="Inscribeme!">
 	
-		</form>
-	</div>
-	<div id="contac_button">
-		<h3>Inscribirme!</h3>
-	</div>
+
+
+	{contenido}
+	
 
 	<footer>
 
