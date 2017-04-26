@@ -46,6 +46,16 @@ class usuario{
 	        }
     }
 
+    function verificar_user ($correo, $pass){
+	    global $baseDatos;
+	    $passmd5 = md5($pass);
+	    $resultsc = $baseDatos->query("SELECT * FROM usuarios WHERE correo = '$correo' and pass = '$passmd5' ");
+	        
+	    return $res = $resultsc->fetch_assoc();
+
+
+    }
+
 }
 
 

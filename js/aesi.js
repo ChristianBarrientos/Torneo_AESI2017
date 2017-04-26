@@ -1,3 +1,5 @@
+
+
 alertSize();
 
 function alertSize() { 
@@ -49,4 +51,13 @@ function displayForm(estado){
 	var form = document.getElementById("inscrip_form");
 	form.style.display = estado;
 }
+
+var fecha=new Date('2017','3','26','10','34','0')
+var hoy=new Date()
+
+$("#boton12").click(function(event) {
+       $("#contac_button").load('ejemplo1.html div#cargarsolo');
+    });
+
+
 

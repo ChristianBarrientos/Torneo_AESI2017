@@ -77,10 +77,24 @@ if ($config["dbEngine"]=="MYSQL"){
 //===========================================================================================================
 // LEVANTA TEMPLATE	|
 //-------------------		
-
+if (isset($_SESSION["nombre"])){
 	$tpl->gotoBlock("_ROOT");
+	$tpl->newBlock("con_login_ejercicios");
+	$tpl->newBlock("con_login");
+	$tpl->newBlock("contenido");
+    $tpl->assign("contenido",Ingreso_Controller::bienvenida_usuario());
     $tpl->assign("contenido",$html);
     $tpl->printToScreen();
+
+}else{
+
+	$tpl->gotoBlock("_ROOT");
+	$tpl->newBlock("sin_login");
+	$tpl->newBlock("contenido");
+    $tpl->assign("contenido",$html);
+    $tpl->printToScreen();
+}
+	
 
 	
     	

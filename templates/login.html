@@ -1,0 +1,32 @@
+<!-- START BLOCK : login_form -->
+<div class="form_login">
+	<div class="contenedor_fomr_login">
+	<h2>Ingresa tus datos.</h2>
+		<form enctype="multipart/form-data" action="index.php?action=Ingreso::verificar_usuario" 	method="post" id="form1"> 
+				
+			<div class="cont_login">	
+
+				<label class="label_login" id="email_login_label" for="correo">Email</label>
+				<input class="input_login" id="email_login_input" required type="email" name="correo" placeholder="Tu Correo" >
+				<br><br>
+				<label class="label_login" for="correo">Contraseña</label>
+				<input class="input_login" required type="password" name="pass" placeholder="Contraseña para tu cuenta">
+				<br><br>
+				<input type="submit" name="submit" id="button_login" value="ENTRAR!">
+			</div>	
+			</form>
+
+	</div>
+</div>
+<!-- END BLOCK : login_form -->
+
+<!-- START BLOCK : login_fail -->
+<div class="form_login">
+	<div class="contenedor_fomr_login">
+	<h2>Ingresa tus datos.</h2>
+			<div class="cont_login">	
+				<h3>No encontramos tu registro. Vuelve a ingresar tus datos.</h3>	
+			</div>	
+	</div>
+</div>
+<!-- END BLOCK : login_fail -->
