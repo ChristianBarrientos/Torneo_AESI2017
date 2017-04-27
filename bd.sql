@@ -4,6 +4,7 @@ CREATE TABLE usuarios (
      nombre VARCHAR(500) NOT NULL,
      correo VARCHAR(100) NOT NULL,
      pass VARCHAR (50) NOT NULL,
+     lenguaje VARCHAR (50) NOT NULL,
      PRIMARY KEY (id_usuario)
      ) ENGINE=InnoDB;
 

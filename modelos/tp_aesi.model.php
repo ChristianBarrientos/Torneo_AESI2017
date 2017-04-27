@@ -2,15 +2,15 @@
 class usuario{
 
 
-	public static function insert_usuario($nombre,$dni, $correo,$pass)
+	public static function insert_usuario($nombre,$dni, $correo,$pass,$leng)
     	{
     		
     		if (usuario::consultar_correo($correo) && usuario::consultar_dni($dni)) {
     			global $baseDatos;
 		        $passmd5 = md5($pass);
 		        
-		        $sql = "INSERT INTO usuarios(id_usuario,dni_usuario,nombre,correo,pass) VALUES 
-		            (0,'$dni','$nombre','$correo','$passmd5')";
+		        $sql = "INSERT INTO usuarios(id_usuario,dni_usuario,nombre,correo,pass,lenguaje) VALUES 
+		            (0,'$dni','$nombre','$correo','$passmd5','$leng')";
 		        $res = $baseDatos->query($sql);
 
 		        return $res;

@@ -39,8 +39,9 @@ class Ingreso_Controller{
 		$dni = mysql_real_escape_string($_POST['dni']);
 		$correo = mysql_real_escape_string($_POST['correo']);
 		$pass = mysql_real_escape_string($_POST['pass']);
+		$leng = mysql_real_escape_string($_POST['leng']);
 
-		$ok_user = usuario::insert_usuario($nombre,$dni,$correo,$pass);
+		$ok_user = usuario::insert_usuario($nombre,$dni,$correo,$pass,$leng);
 		if ($ok_user) {
 			$tp1 = new TemplatePower("templates/registro_exito.html");
        		$tp1->prepare();
