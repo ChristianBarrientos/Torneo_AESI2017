@@ -34,12 +34,12 @@ class Ingreso_Controller{
 	}
 
 	function inscripcion (){
-        
-		$nombre = mysql_real_escape_string($_POST['nombre']);
-		$dni = mysql_real_escape_string($_POST['dni']);
-		$correo = mysql_real_escape_string($_POST['correo']);
-		$pass = mysql_real_escape_string($_POST['pass']);
-		$leng = mysql_real_escape_string($_POST['leng']);
+        global $baseDatos;
+		$nombre = $baseDatos->real_escape_string($_POST['nombre']);
+		$dni = $baseDatos->real_escape_string($_POST['dni']);
+		$correo = $baseDatos->real_escape_string($_POST['correo']);
+		$pass = $baseDatos->real_escape_string($_POST['pass']);
+		$leng = $baseDatos->real_escape_string($_POST['leng']);
 
 		$ok_user = usuario::insert_usuario($nombre,$dni,$correo,$pass,$leng);
 		if ($ok_user) {

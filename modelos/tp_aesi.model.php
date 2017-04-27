@@ -12,7 +12,7 @@ class usuario{
 		        $sql = "INSERT INTO usuarios(id_usuario,dni_usuario,nombre,correo,pass,lenguaje) VALUES 
 		            (0,'$dni','$nombre','$correo','$passmd5','$leng')";
 		        $res = $baseDatos->query($sql);
-
+		     
 		        return $res;
     		}
     		else
